@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes slide {
+  from {
+    transform: translateY(-80%);
+    /*height: 0;*/
+  }
+
+  to {
+    transform: translateY(0);
+    /*height: auto;*/
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateY(80%);
+    /*height: 0;*/
+  }
+
+  to {
+    transform: translateY(0);
+    /*height: auto;*/
+  }
+}
+
+.slide-out {
+  animation-name: slide-out;
+  animation-duration: 1s;
+  transition-timing-function: ease-out;
+  /*position: relative;*/
+  z-index: 10;
+}
+
+
+.slide-in {
+  animation-name: slide;
+  animation-duration: 1s;
+  transition-timing-function: ease-out;
+  /*position: relative;*/
+  z-index: 10;
+}
+
+.heading-box {
+  content: '';
+  background-color: #27262b;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  z-index: 11;
+}
