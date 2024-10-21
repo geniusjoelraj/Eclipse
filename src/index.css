@@ -15,7 +15,7 @@
   }
 }
 
-@keyframes slide-out {
+@keyframes slide {
   from {
     transform: translateY(80%);
     /*height: 0;*/
@@ -26,15 +26,6 @@
     /*height: auto;*/
   }
 }
-
-.slide-out {
-  animation-name: slide-out;
-  animation-duration: 1s;
-  transition-timing-function: ease-out;
-  /*position: relative;*/
-  z-index: 10;
-}
-
 
 .slide-in {
   animation-name: slide;
