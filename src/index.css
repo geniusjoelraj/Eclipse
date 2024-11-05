@@ -35,6 +35,16 @@
 
 }
 
+.slide-delay-2 {
+  animation-name: slide;
+  animation-duration: 0.75s;
+  transition-timing-function: ease-out;
+  animation-delay: 1750ms;
+  /*position: relative;*/
+  z-index: 20;
+  animation-fill-mode: forwards;
+}
+
 .heading-box {
   content: '';
   background-color: #27262b;
